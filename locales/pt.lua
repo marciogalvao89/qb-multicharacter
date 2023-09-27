@@ -1,75 +1,76 @@
 local Translations = {
     notifications = {
-        ["char_deleted"] = "Personagem excluído!",
-        ["deleted_other_char"] = "Você excluiu com sucesso o personagem com id de cidadão %{citizenid}.",
-        ["forgot_citizenid"] = "Você esqueceu de inserir um ID de cidadão!",
-    },
+        ["char_deleted"] = "Personagem apagada!",
+        ["deleted_other_char"] = "Apagou com successo, a personagem com Identificação: %{citizenid}.",
+        ["forgot_citizenid"] = "Esqueceu-se de inserir a identificação do cidadão!",
+        },
 
     commands = {
         -- /deletechar
-        ["deletechar_description"] = "Deletes another players character",
-        ["citizenid"] = "Citizen ID",
-        ["citizenid_help"] = "The Citizen ID of the character you want to delete",
+        ["deletechar_description"] = "Apaga o personagem de outro jogador",
+        ["citizenid"] = "Identificação do cidadão",
+        ["citizenid_help"] = "O ID do cidadão do personagem que deseja remover",
 
         -- /logout
-        ["logout_description"] = "Logout of Character (Admin Only)",
+        ["logout_description"] = "Logout à personagem (Admin Only)",
 
         -- /closeNUI
-        ["closeNUI_description"] = "Close Multi NUI"
+        ["closeNUI_description"] = "Fechar Multiplos NUIs"
     },
 
     misc = {
-        ["droppedplayer"] = "Você se desconectou"
+        ["droppedplayer"] = "Saiu do servidor"
     },
 
     ui = {
         -- Main
-        characters_header = "Meus personagens",
-        emptyslot = "Espaço Vazio",
-        play_button = "Jogar",
-        create_button = "Criar personagem",
-        delete_button = "Excluir personagem",
+        characters_header = "Minhas personagens",
+        emptyslot = "Slot Vazia",
+        play_button = "Acordar",
+        create_button = "Criar Personagem",
+        delete_button = "Apagar Personagem",
 
         -- Character Information
-        charinfo_header = "Informações do personagem",
-        charinfo_description = "Selecione um slot de personagem para ver todas as informações sobre seu personagem.",
+        charinfo_header = "Informação da personagem",
+        charinfo_description = "Seleccione uma personagem, para ver as suas informações.",
         name = "Nome",
         male = "Homem",
         female = "Mulher",
         firstname = "Nome",
-        lastname = "Apelido",
-        nationality = "Nacionalidade",
-        gender = "Gênero",
-        birthdate = "Data de nascimento",
-        job = "Emprego",
+        lastname = "Sobrenome",
+        nationality = "Nationalidade",
+        gender = "Genero",
+        birthdate = "Aniversário",
+        job = "Profissão",
         jobgrade = "Cargo",
-        cash = "Cash",
-        bank = "Bank",
-        phonenumber = "Número de telefone",
-        accountnumber = "Número da conta",
+        cash = "Dinheiro",
+        bank = "Banco",
+        phonenumber = "Contacto",
+        accountnumber = "Numero da Conta",
 
-        chardel_header = "Registro de personagem",
+        chardel_header = "Registo de personagem",
 
         -- Delete character
-        deletechar_header = "Excluir personagem",
-        deletechar_description = "Tem certeza de que deseja excluir seu personagem?",
+        deletechar_header = "Apagar personagem",
+        deletechar_description = "Tem a certeza, que quer apagar a sua personagem?",
 
         -- Buttons
         cancel = "Cancelar",
         confirm = "Confirmar",
 
         -- Loading Text
-        retrieving_playerdata = "Recuperando dados do jogador",
-        validating_playerdata = "Validando os dados do jogador",
-        retrieving_characters = "Recuperando caracteres",
-        validating_characters = "Validando caracteres",
+        retrieving_playerdata = "Carregando dados do joagador",
+        validating_playerdata = "Validando dados do joagador",
+        retrieving_characters = "Carregando personagens",
+        validating_characters = "Validando personagens",
 
         -- Notifications
-        ran_into_issue = "Nós nos deparamos com um problema",
-        profanity = "Parece que você está tentando usar algum tipo de palavrão/palavrão em seu nome ou nacionalidade!",
-        forgotten_field = "Parece que você esqueceu de inserir um ou vários campos!"
-    }
+        ran_into_issue = "Encontramos um problema",
+        profanity = "Parece que está tentando usar algum tipo de palavrão / palavrões no seu nome ou nacionalidade!",
+        forgotten_field = "Parece que se esqueceu de inserir um ou vários dos campos!"
+        }
 }
+
 if GetConvar('qb_locale', 'en') == 'pt' then
     Lang = Locale:new({
         phrases = Translations,
